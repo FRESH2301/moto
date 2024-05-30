@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form action="send.php" method="post">
+        <label for="">Имя</label><br>
+        <input name="login" type="text" placeholder="name" required><br>
+        <label for="">Пароль</label><br>
+        <input name="pass" type="password" placeholder="введите пароль" required><br>
+        <label for="">Почта</label><br>
+        <input name="email" type="email" placeholder="@gmail.com" required><br>
+        <label for="">Телефон</label><br>
+        <input name="phone" type="tel" value="+375 " required><br>
+
+        <input type="submit" value="отправить данные">
+    </form>
+</body>
+</html>

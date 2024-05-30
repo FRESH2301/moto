@@ -1,0 +1,580 @@
+body {
+  background: linear-gradient(to left, #000000, #6f050f);
+  margin: 5rem 0;
+  font-family: sans-serif;
+}
+#glavbur {
+  display: none;
+  justify-content: end;
+}
+#glavbur:hover {
+  cursor: pointer;
+}
+#burger {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  background-color: #ff0800;
+}
+.menu #burger {
+  position: absolute;
+  right: 5rem;
+}
+.burger-menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-bottom: 12px double #fff;
+  border-top: 4px solid #fff;
+  content: "";
+  height: 4px;
+  width: 30px;
+}
+.mo {
+  color: white;
+  text-decoration: none;
+}
+.red-square-cat {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  background-color: #DC5954;
+}
+.lines {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-bottom: 12px double #fff;
+  border-top: 4px solid #fff;
+  content: "";
+  height: 4px;
+  width: 30px;
+  box-sizing: unset;
+  display: inline-block;
+  vertical-align: middle;
+}
+#container {
+  user-select: none;
+  width: 85%;
+  margin: 0 auto;
+  box-shadow: 0 0 2rem #202020;
+  font-family: sans-serif;
+}
+#crest {
+  display: none;
+  cursor: pointer;
+}
+div#crest {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  border-radius: 6px;
+  z-index: 200;
+}
+div#crest:before,
+div#crest:after {
+  content: '';
+  position: absolute;
+  width: 36px;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+  top: 16px;
+}
+div#crest:before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 2px;
+}
+div#crest:after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  right: 2px;
+}
+#container .bmw img {
+  width: 100%;
+  height: 50%;
+  object-fit: contain;
+}
+header {
+  background: black;
+  width: 100%;
+}
+.menu nav {
+  color: white;
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu {
+  display: flex;
+}
+.menu nav a {
+  display: grid;
+  place-items: center;
+  list-style: none;
+  height: 100%;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.menu a:hover {
+  background: rgba(128, 128, 128, 0.235);
+  transition: 0.2s;
+  cursor: pointer;
+}
+.left img {
+  width: 10rem;
+}
+.but {
+  background: red;
+  border: none;
+  color: white;
+  height: 2rem;
+  position: relative;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  font-size: 1.2rem;
+}
+.but:hover {
+  cursor: pointer;
+  background-color: #ab0c1c;
+  transition: 0.2s;
+}
+.bmw {
+  position: relative;
+}
+.text {
+  position: absolute;
+  top: 43%;
+  left: 5%;
+  transform: translate(-5%, -43%);
+  font-size: 3.5rem;
+  font-family: sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+}
+.bmw img {
+  display: block;
+  max-width: 100%;
+}
+.black {
+  background: #000000;
+}
+.type {
+  width: 100%;
+  display: flex;
+  color: white;
+  justify-content: space-around;
+}
+.type li {
+  margin: 2rem 0;
+  list-style: none;
+  font-size: 2rem;
+  border-top: 2px solid #ff0000;
+  border-bottom: 2px solid #ff0000;
+  height: 7rem;
+  width: 13rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.type li:hover {
+  transition: all 0.3s;
+  background: rgba(104, 104, 104, 0.226);
+  cursor: pointer;
+}
+.type img {
+  width: 75%;
+  font-size: 2rem;
+}
+.one {
+  padding: 3.5rem;
+}
+.kawas {
+  position: relative;
+}
+.text2 {
+  position: absolute;
+  top: 0;
+  left: 2.5%;
+  transform: translate(2.5%, 0%);
+  font-size: 3.5rem;
+  font-family: sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+}
+.kawas img {
+  display: block;
+  width: 100%;
+}
+.kawas .prem {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-size: 5rem;
+  left: 1rem;
+  font-weight: bold;
+}
+.dacuti {
+  width: 100%;
+  position: relative;
+}
+.dacuti img {
+  display: block;
+  width: 100%;
+  color: white;
+}
+.text3 {
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  display: flex;
+  position: absolute;
+  color: #ffffff;
+  top: -3.5rem;
+}
+.text3 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  text-align: center;
+  border: 1px solid #ff0000;
+  flex-direction: column;
+  font-weight: bold;
+  width: 23%;
+  height: 7rem;
+  font-size: 1.5rem;
+}
+.text3 div:hover {
+  box-shadow: 0 0 0.8rem red;
+  transition: all 0.3s;
+}
+.dowm {
+  position: absolute;
+  bottom: -2.5rem;
+  left: 1rem;
+}
+.dowm p {
+  color: white;
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+.dowm p span {
+  color: red;
+}
+#quwesh {
+  width: 100%;
+  background: black;
+}
+.vopr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.vopr div {
+  padding: 1rem;
+  background: #202020;
+  border-radius: 5px;
+  color: white;
+}
+.vopr div:hover {
+  cursor: pointer;
+  background: #303030;
+  transition: all 0.2s;
+}
+#lenovo {
+  background: black;
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#lenovo span {
+  color: red;
+}
+.ac {
+  width: 90%;
+  margin: 0 auto;
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 1.5rem;
+}
+.partneri {
+  width: 90%;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+}
+.partneri li {
+  font-weight: bold;
+  font-size: 170%;
+  width: 25%;
+  list-style: none;
+  text-align: center;
+  border-left: 2px solid white;
+}
+.partneri li:first-child {
+  border-left: none;
+}
+#end {
+  width: 100%;
+  position: relative;
+}
+#end img {
+  width: 100%;
+}
+.phoneslider {
+  position: absolute;
+  bottom: 20rem;
+  right: 0;
+  color: white;
+}
+.number {
+  overflow: hidden;
+}
+.number .num {
+  font-size: 1.7rem;
+  transform: translateX(-100%);
+  animation: translate 5s linear infinite;
+}
+.polit {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: #aeaeae;
+}
+.slide {
+  transform: translateY(0%);
+  transition: 0.35s;
+}
+@keyframes translate {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #container {
+    width: 100%;
+  }
+  .menu nav.navv {
+    position: fixed;
+    display: grid;
+    place-items: center;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background: linear-gradient(to left, #491414, black);
+    box-shadow: inset 0 0 5rem #3d1111;
+    z-index: 101;
+    transform: translateX(100%);
+  }
+  .menu nav.navv a {
+    width: 15rem;
+    border-top: 2px solid red;
+  }
+  .menu nav.navv a:first-child {
+    border-top: none;
+  }
+  .menu button {
+    display: none;
+  }
+  .text {
+    font-size: 2rem;
+  }
+  .type li {
+    font-size: 1rem;
+    width: 9rem;
+  }
+  .text2 {
+    font-size: 2rem;
+  }
+  .kawas .prem {
+    font-size: 2.5rem;
+    bottom: 2rem;
+  }
+  .text3 div {
+    font-size: 1rem;
+  }
+  .dowm p {
+    font-size: 2rem;
+  }
+  .dowm {
+    bottom: -1rem;
+  }
+  .ac {
+    font-size: 2rem;
+  }
+  .partneri li {
+    font-weight: bold;
+    font-size: 1.2rem;
+    list-style: none;
+    text-align: center;
+    border-left: 2px solid white;
+  }
+  #glavbur {
+    display: flex;
+    margin: 1rem;
+  }
+  .number {
+    left: 1rem;
+  }
+  #crest {
+    display: block;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .menu nav,
+  button {
+    display: none;
+  }
+  #glavbur {
+    display: block;
+    margin-top: 1rem;
+  }
+  .text {
+    font-size: 1.2rem;
+  }
+  .type {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    place-items: center;
+  }
+  .type li {
+    width: 80%;
+    font-size: 1.4rem;
+    height: 4rem;
+    margin-bottom: 0;
+  }
+  .black {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .text2 {
+    position: absolute;
+    top: 0;
+    left: 2.5%;
+    transform: translate(2.5%, 0%);
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  .prem {
+    position: relative;
+    margin-bottom: 2rem;
+    bottom: 0;
+    color: white;
+    font-size: 2rem;
+    left: 1rem;
+    font-weight: bold;
+  }
+  .premtext {
+    font-size: 1.25rem;
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  .text3 {
+    position: absolute;
+    color: #ffffff;
+    top: -2rem;
+  }
+  .text3 div {
+    font-size: 1.5rem;
+    position: relative;
+    top: -1rem;
+    font-size: 0.6rem;
+    height: 5rem;
+  }
+  .dowm {
+    position: absolute;
+    bottom: -1rem;
+    left: 1rem;
+  }
+  .dowm p {
+    color: white;
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+  #quwesh {
+    width: 100%;
+    background: black;
+  }
+  .vopr {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .ac {
+    font-size: 2rem;
+  }
+  .partneri {
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+  }
+  .partneri li {
+    font-weight: bold;
+    font-size: 70%;
+    width: 25%;
+    list-style: none;
+    text-align: center;
+    border-left: none;
+    margin-left: 0;
+  }
+  .number .num {
+    position: relative;
+    font-size: 1rem;
+    transform: translateX(-100%);
+    animation: translate 5s linear infinite;
+  }
+  .polit {
+    position: absolute;
+    border-top: 2rem;
+    left: 0.5rem;
+    color: #aeaeae;
+  }
+  .phoneslider {
+    position: absolute;
+    bottom: 5rem;
+    right: 0;
+    color: white;
+  }
+  .menu nav.navv {
+    position: fixed;
+    display: grid;
+    place-items: center;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background: linear-gradient(to left, #491414, black);
+    box-shadow: inset 0 0 5rem #3d1111;
+    z-index: 101;
+    transform: translateX(100%);
+  }
+  #crest {
+    display: block;
+  }
+}

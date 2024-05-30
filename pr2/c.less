@@ -1,0 +1,405 @@
+body {
+    background: rgb(193, 193, 193);
+    user-select: none;
+}
+.go-top {
+    position: fixed;
+    left: 2em;
+    top: 15em;
+    font-size: 3em;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: inset 0 0 0.3em black;
+    cursor: pointer;
+    animation: top 3s linear infinite;
+    user-select: none;
+    display: none;
+}
+.gotop-show {
+    display: block;
+}
+@keyframes top {
+    0% {
+        box-shadow: 0 0 0.35em;
+    }
+    50% {
+        box-shadow: 0 0 0.1em gray;
+    }
+    100% {
+        box-shadow: 0 0 0.35em black;
+    }
+}
+.burger {
+    display: none;
+    font-size: 2.75em;
+}
+.icon {
+    display: none;
+}
+.burgermenu {
+    display: none;
+}
+#container {
+    width: 95%;
+    background: white;
+    margin: 7em auto;
+    border-radius: 10px;
+}
+#container img.sofa {
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+    border-radius: 5px;
+}
+.menu {
+    width: 80%;
+    margin: 0 auto;
+}
+.name {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.name a {
+    text-transform: uppercase;
+    text-decoration: none;
+    height: 100%;
+    padding: 5px;
+    font-family: sans-serif;
+    color: black;
+    width: 6em;
+    height: 2.5em;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+.name a:hover {
+    background: rgb(235, 235, 235);
+    transition: all 0.3s;
+}
+.name a:active {
+    color: rgb(137, 137, 137);
+    transition: color 0s;
+}
+.interior {
+    position: absolute;
+    font-size: 6em;
+    font-family: sans-serif;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    color: rgb(83, 83, 83);
+}
+.lorem {
+    position: absolute;
+    width: 30%;
+    height: 20%;
+    top: 67%;
+    left: 90%;
+    transform: translate(-90%, -67%);
+    font-family: sans-serif;
+    margin-left: 1em;
+}
+.jopa {
+    transform: translateY(100%);
+    transition: 0.4s;
+}
+.btn {
+    background: transparent;
+    width: 10em;
+    height: 2.5em;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0.5em black;
+    font-family: sans-serif;
+    display: grid;
+    place-items: center;
+}
+.btn:hover {
+    background: rgba(222, 222, 222, 0.432);
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0.5em black;
+    backdrop-filter: blur(5px);
+    transition: all 0.5s;
+    box-shadow:0px 0px 0.3em black;
+}
+.style {
+    width: 80%;
+    margin: 2em auto;
+    font-family: sans-serif;
+    font-size: 2em;
+    letter-spacing: 1px;
+    border-bottom: 2.5px solid gray;
+    padding-bottom: 1em;
+}
+.block {
+    display: flex;
+    width: 80%;
+    margin: -2em auto;
+    justify-content: end;
+    margin-bottom: 3em;
+}
+.block p {
+    width: 17em;
+    font-size: 1.4em;
+    font-family: sans-serif;
+}
+.pict {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#sofa2 img{
+    width: 95%;
+    border-radius: 10px;
+}
+#table img{
+    width: 95%;    
+    border-radius: 10px;
+}
+
+.lii {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 23em);
+    grid-gap: 10px; /* расстояние между элементами */
+    color: rgb(70, 70, 70);
+    margin: 0 auto;
+    justify-content: end;
+    font-family: sans-serif;
+}
+
+.lii .us {
+    font-size: 1.4em;
+    padding: 10px;
+    margin: 5px;
+}
+.lii .us span {
+    color: black;
+    font-weight: bold;
+}
+.jop {
+    width: 80%;
+    margin: 2em auto;
+    display: flex;
+}
+.jop img {
+    object-fit: cover;
+    width: 100%;
+    height: 35em;
+    border-radius: 10px;
+}
+
+@media (min-width: 1024px) {
+    .lorem {
+        position: absolute;
+        width: 30%;
+        height: 20%;
+        top: 67%;
+        left: 88%;
+        transform: translate(-88%, -67%);
+        font-family: sans-serif;
+        margin-left: 2em;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .interior {
+        font-size: 3.5em;
+    }
+    .block p.one {
+        margin-right: 1em;
+    }
+    .lorem {
+        position: absolute;
+        width: 30%;
+        height: 20%;
+        top: 50%;
+        left: 85%;
+        transform: translate(-85%, -50%);
+        font-family: sans-serif;
+        margin-left: 1em;
+    }
+    .name {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .style {
+        font-size: 1.5em;
+    }
+    .lii {
+        grid-template-columns: repeat(2, 50%);
+        justify-content: start;
+    }
+    .go-top {
+        font-size: 2.3em;
+        left: 1em;
+        top: 18em;
+        z-index: 1000;
+    }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+    
+    .name {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 12em;
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background: rgb(169, 167, 151);
+        z-index: 10;
+        transform: translateX(100%);
+        transition: all 0s;
+        box-shadow: inset 0 0 2em rgb(81, 81, 81);
+    }
+    .name a {
+        border-bottom: 2px solid white;
+        border-top: 2px solid white;
+        color: white;
+    }
+    .name a:hover {
+        font-weight: bold;
+        background: transparent;
+    }
+    .icon {
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 1.5em;
+        right: 1.5em;
+    }
+    .jopa2 {
+        transform: translateX(100%);
+        transition: 1s;
+    }
+    .icon::before, .icon::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #333;
+    }
+    
+    .icon::before {
+        transform: rotate(45deg);
+    }
+    
+    .icon::after {
+        transform: rotate(-45deg);
+    } 
+    .active {
+        position: absolute;
+        font-size: 2em;
+        top: 0.5em;
+        right: 0.5em;
+    }
+    .jopa {
+        transform: translateX(0);
+        transition: 1s;
+    }
+    .burger {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+    }
+    .burgermenu {
+        display: block;
+        margin-right: 1em;
+        z-index: 5;
+    }
+    #data {
+        margin-right: auto;
+        margin-left: 2em;
+        font-size: 0.5em;
+        margin-top: 0.6em;
+    }
+    .interior {
+        position: absolute;
+        font-size: 3.2em;
+        font-family: sans-serif;
+        top: 4.5em;
+        left: 3.5em;
+        color: rgb(83, 83, 83);
+        font-size: 2.5em;
+    }
+    #container img.sofa {
+        width: 100%;
+        height: 30em;
+        object-fit: cover;
+        display: flex;
+        border-radius: 5px;
+    }
+    .lorem {
+        position: absolute;
+        width: 12em;
+        top: 28em;
+        left: 12.7em;
+        font-family: sans-serif;
+        margin-left: 1em;
+    }
+    .style {
+        font-size: 0.8em;
+
+        display: flex;
+        justify-content: center;
+    }
+    .block {
+        font-size: 1em;
+        flex-wrap: wrap;
+    }
+    .pict {
+        flex-wrap: wrap;
+        z-index: 1;
+    }
+    .pict #sofa2 {
+        margin-bottom: 1em;
+    }
+    .block {
+        justify-content: start;
+    }
+    .go-top {
+        font-size: 2.3em;
+        left: 10%;
+        top: unset;
+        background-color: #fff;
+        bottom: 5%;
+        z-index: 1000;
+    }
+    .lii {
+        display: flex;
+        flex-direction: column;
+    }
+    .jop {
+        width: 80%;
+        margin: -5em auto;
+        display: flex;
+    }
+    .jop img {
+        width: 100%;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+}
+footer {
+    display: flex;
+    height: 10em;
+    background: rgb(90, 90, 90);
+    margin-top: 2em;
+    border-radius: 0 0 5px 5px;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: end;
+}
+#foot {
+    font-size: 0.8em;
+    color: gray;
+    margin-bottom: 2em;
+}
